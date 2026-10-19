@@ -1,28 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Haileab Dejene - Student Developer Portfolio">
+    <meta name="description" content="Haileab Dejene — student developer portfolio showcasing web development skills and projects.">
+    <meta name="theme-color" content="#0b1020">
     <title>Haileab Dejene | Student Developer</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
     <!-- Navigation -->
     <header class="header">
-        <nav class="navbar container">
+        <nav class="navbar container" aria-label="Main navigation">
             <a href="#home" class="logo">Haileab<span>.</span></a>
-
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme">
-                    <span id="theme-icon">☀️</span>
-                </button>
-
-                <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-                    ☰
-                </button>
-            </div>
 
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -31,76 +25,174 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="nav-controls">
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Switch to light theme"
+                    title="Toggle theme">
+                    <span id="theme-icon" aria-hidden="true">☀️</span>
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-controls="nav-links"
+                    aria-expanded="false">
+                    <span aria-hidden="true">☰</span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
+
         <!-- Hero Section -->
         <section class="hero container" id="home">
+
             <div class="hero-content">
                 <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-                <h1>Hello, I'm <br><span>Haileab Dejene</span></h1>
-                <h2>I am a <span class="typing-text" id="typing-text"></span><span class="cursor">|</span></h2>
+
+                <h1>
+                    Hello, I'm<br>
+                    <span>Haileab Dejene</span>
+                </h1>
+
+                <h2>
+                    I am a
+                    <span class="typing-text" id="typing-text">
+                        Student Developer
+                    </span>
+                    <span class="cursor" aria-hidden="true">|</span>
+                </h2>
 
                 <p class="hero-description">
-                    I am a student passionate about building clean, accessible, 
-                    and responsive web applications. This is my journey into modern web development.
+                    I am a software development student passionate about
+                    building clean, accessible, and responsive web
+                    applications. This is my journey into modern web
+                    development.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="#projects" class="btn btn-primary">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
                 </div>
             </div>
 
-            <div class="profile-card">
+            <!-- Developer Profile Card -->
+            <aside class="profile-card" aria-label="Developer profile">
+
                 <div class="profile-circle">HD</div>
+
+                <p class="profile-kicker">
+                    SOFTWARE DEVELOPMENT STUDENT
+                </p>
+
                 <h3>Haileab Dejene</h3>
+
                 <p>Aspiring Web Developer</p>
+
                 <div class="profile-tags">
                     <span>Learning</span>
                     <span>Building</span>
                     <span>Growing</span>
                 </div>
-            </div>
+
+                <div class="code-snippet" aria-label="A small code sample">
+                    <span class="code-dot"></span>
+                    <span class="code-dot"></span>
+                    <span class="code-dot"></span>
+
+                    <code>
+                        <span>const</span> future =
+                        <em>"developer"</em>;
+                    </code>
+                </div>
+
+            </aside>
         </section>
 
         <!-- About Section -->
         <section class="section section-light" id="about">
             <div class="container">
+
                 <p class="eyebrow">GET TO KNOW ME</p>
+
                 <h2 class="section-title">About Me</h2>
 
                 <div class="about-content">
-                    <div class="about-mark">ME<span>.</span></div>
+
+                    <div class="about-mark" aria-hidden="true">
+                        &lt;/&gt;
+                    </div>
+
                     <div>
-                        <h3>Passionate about tech & problem solving</h3>
+                        <h3>
+                            Passionate about technology &amp; problem solving
+                        </h3>
+
                         <p>
-                            My name is Haileab Dejene. I am a student dedicated to learning modern web technologies.
-                            My focus is on creating responsive interfaces using semantic HTML, CSS, JavaScript, and Git.
+                            My name is Haileab Dejene. I am a student
+                            dedicated to learning modern web technologies.
+                            My focus is on creating responsive interfaces
+                            using semantic HTML, CSS, JavaScript, and Git.
                         </p>
+
                         <p>
-                            I enjoy turning design concepts into functional code and learning new web capabilities every single day.
+                            I enjoy turning design concepts into functional
+                            code and learning new web capabilities every
+                            single day. Each project is an opportunity to
+                            practice, solve problems, and grow as a developer.
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section class="section container" id="skills">
+
             <p class="eyebrow">WHAT I'M LEARNING</p>
+
             <h2 class="section-title">My Skills</h2>
-            <p class="section-subtitle">Core technologies and tools I practice and build with.</p>
+
+            <p class="section-subtitle">
+                Core technologies and tools I practice and build with.
+            </p>
 
             <div class="skills-grid">
+
                 <article class="skill-card">
                     <div class="card-header">
                         <span class="skill-number">01</span>
                         <h3>HTML5</h3>
                     </div>
-                    <p>Semantic structure, accessibility, and modern layout design.</p>
-                    <div class="skill-bar"><span style="width: 75%"></span></div>
+
+                    <p>
+                        Semantic structure, accessibility, and modern
+                        page layouts.
+                    </p>
+
+                    <div
+                        class="skill-bar"
+                        role="progressbar"
+                        aria-label="HTML skill level"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="75">
+                        <span style="width: 75%"></span>
+                    </div>
+
                     <small>Intermediate</small>
                 </article>
 
@@ -109,8 +201,22 @@
                         <span class="skill-number">02</span>
                         <h3>CSS3</h3>
                     </div>
-                    <p>Flexbox, Grid, custom properties, and smooth animations.</p>
-                    <div class="skill-bar"><span style="width: 65%"></span></div>
+
+                    <p>
+                        Flexbox, Grid, custom properties, responsive
+                        design, and animations.
+                    </p>
+
+                    <div
+                        class="skill-bar"
+                        role="progressbar"
+                        aria-label="CSS skill level"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="65">
+                        <span style="width: 65%"></span>
+                    </div>
+
                     <small>Learning</small>
                 </article>
 
@@ -119,119 +225,279 @@
                         <span class="skill-number">03</span>
                         <h3>JavaScript</h3>
                     </div>
-                    <p>DOM manipulation, events, asynchronous features, and logic.</p>
-                    <div class="skill-bar"><span style="width: 45%"></span></div>
+
+                    <p>
+                        DOM manipulation, events, programming logic,
+                        and interactive features.
+                    </p>
+
+                    <div
+                        class="skill-bar"
+                        role="progressbar"
+                        aria-label="JavaScript skill level"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="45">
+                        <span style="width: 45%"></span>
+                    </div>
+
                     <small>Learning</small>
                 </article>
 
                 <article class="skill-card">
                     <div class="card-header">
                         <span class="skill-number">04</span>
-                        <h3>Git & GitHub</h3>
+                        <h3>Git &amp; GitHub</h3>
                     </div>
-                    <p>Version control, tracking changes, and project hosting.</p>
-                    <div class="skill-bar"><span style="width: 50%"></span></div>
+
+                    <p>
+                        Version control, tracking changes, and sharing
+                        projects online.
+                    </p>
+
+                    <div
+                        class="skill-bar"
+                        role="progressbar"
+                        aria-label="Git and GitHub skill level"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50">
+                        <span style="width: 50%"></span>
+                    </div>
+
                     <small>Learning</small>
                 </article>
+
             </div>
         </section>
 
         <!-- Projects Section -->
         <section class="section section-light" id="projects">
             <div class="container">
-                <p class="eyebrow">MY WORK</p>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Explore my work. Use the filter buttons to sort by category.</p>
 
-                <div class="filter-container">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="html-css">HTML &amp; CSS</button>
-                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <p class="eyebrow">MY WORK</p>
+
+                <h2 class="section-title">Featured Projects</h2>
+
+                <p class="section-subtitle">
+                    Explore my work. Use the filter buttons to sort
+                    by category.
+                </p>
+
+                <div
+                    class="filter-container"
+                    role="group"
+                    aria-label="Filter projects">
+
+                    <button
+                        class="filter-btn active"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true">
+                        All
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                        data-filter="html-css"
+                        aria-pressed="false">
+                        HTML &amp; CSS
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                        data-filter="javascript"
+                        aria-pressed="false">
+                        JavaScript
+                    </button>
                 </div>
 
-                <div class="projects-grid">
-                    <article class="project-card" data-category="html-css javascript">
+                <div class="projects-grid" id="projects-grid">
+
+                    <article
+                        class="project-card"
+                        data-category="html-css javascript">
+
                         <div class="project-icon">01</div>
+
                         <p class="project-label">FEATURED</p>
+
                         <h3>Personal Portfolio</h3>
-                        <p>A modern, interactive student portfolio website built from scratch.</p>
+
+                        <p>
+                            A modern, interactive student portfolio
+                            website built from scratch.
+                        </p>
+
                         <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
                         </div>
                     </article>
 
-                    <article class="project-card" data-category="javascript">
+                    <article
+                        class="project-card"
+                        data-category="javascript">
+
                         <div class="project-icon">02</div>
+
                         <p class="project-label">COMING SOON</p>
+
                         <h3>To-Do App</h3>
-                        <p>Task tracker app with persistent storage and completion filters.</p>
+
+                        <p>
+                            A task tracker with persistent storage
+                            and completion filters.
+                        </p>
+
                         <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
                         </div>
                     </article>
 
-                    <article class="project-card" data-category="javascript">
+                    <article
+                        class="project-card"
+                        data-category="javascript">
+
                         <div class="project-icon">03</div>
+
                         <p class="project-label">COMING SOON</p>
+
                         <h3>Calculator</h3>
-                        <p>A sleek web calculator with keypress shortcuts and clean display.</p>
+
+                        <p>
+                            A sleek web calculator with keyboard
+                            shortcuts and a clean display.
+                        </p>
+
                         <div class="project-tags">
-                            <span>HTML</span><span>CSS</span><span>JS</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section class="section container" id="contact">
+
             <p class="eyebrow">LET'S CONNECT</p>
+
             <h2 class="section-title">Contact Me</h2>
-            <p class="section-subtitle">Have a question or want to work together? Feel free to reach out!</p>
+
+            <p class="section-subtitle">
+                Have a question or want to work together?
+                Feel free to reach out!
+            </p>
 
             <div class="contact-wrapper">
+
                 <div class="contact-card">
+
                     <div>
                         <span class="contact-label">EMAIL ME</span>
-                        <p><a href="mailto:haylapj@gmail.com">haylapj@gmail.com</a></p>
+
+                        <p>
+                            <a href="mailto:haylapj@gmail.com">
+                                haylapj@gmail.com
+                            </a>
+                        </p>
                     </div>
+
                     <div>
                         <span class="contact-label">GITHUB</span>
-                        <p><a href="https://github.com/haylapj" target="_blank" rel="noopener noreferrer">github.com/haylapj ↗</a></p>
+
+                        <p>
+                            <a
+                                href="https://github.com/haylapj"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                github.com/haylapj ↗
+                            </a>
+                        </p>
                     </div>
+
                 </div>
 
-                <form class="contact-form" id="contact-form" action="https://formspree.io/f/xknp_your_form_id" method="POST">
+                <!-- Replace this placeholder with your real Formspree URL. -->
+                <form
+                    class="contact-form"
+                    id="contact-form"
+                    action="https://formspree.io/f/xknp_your_form_id"
+                    method="POST">
+
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your email address"
+                            autocomplete="email"
+                            required>
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Your message..."
+                            required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
-                    <p class="form-status" id="form-status"></p>
+                    <button
+                        type="submit"
+                        class="btn btn-primary form-submit-btn">
+                        Send Message
+                    </button>
+
+                    <p
+                        class="form-status"
+                        id="form-status"
+                        role="status"
+                        aria-live="polite"></p>
+
                 </form>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p>© <span id="year"></span> Haileab Dejene. All rights reserved.</p>
+            <p>
+                © <span id="year"></span> Haileab Dejene.
+                All rights reserved.
+            </p>
+
             <a href="#home">Back to top ↑</a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
