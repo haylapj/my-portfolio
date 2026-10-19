@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My personal student portfolio website">
-    <title>My Portfolio | Student Developer</title>
+    <meta name="description" content="Haileab Dejene - Student Developer Portfolio">
+    <title>Haileab Dejene | Student Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,12 +12,17 @@
     <!-- Navigation -->
     <header class="header">
         <nav class="navbar container">
-            <a href="#home" class="logo">MyPortfolio<span>.</span></a>
+            <a href="#home" class="logo">Haileab<span>.</span></a>
 
-            <button class="menu-toggle" id="menu-toggle"
-                    aria-label="Open navigation" aria-expanded="false">
-                ☰
-            </button>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme">
+                    <span id="theme-icon">☀️</span>
+                </button>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+                    ☰
+                </button>
+            </div>
 
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -31,33 +35,28 @@
     </header>
 
     <main>
-        <!-- Home -->
+        <!-- Hero Section -->
         <section class="hero container" id="home">
             <div class="hero-content">
                 <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-                <h1>Hello, I'm <span>Haileab Dejene</span></h1>
-                <h2>Student &amp; Aspiring Web Developer</h2>
+                <h1>Hello, I'm <br><span>Haileab Dejene</span></h1>
+                <h2>I am a <span class="typing-text" id="typing-text"></span><span class="cursor">|</span></h2>
 
                 <p class="hero-description">
-                    I am a student learning how to build beautiful,
-                    useful, and responsive websites. This is my journey
-                    into the world of web development.
+                    I am a student passionate about building clean, accessible, 
+                    and responsive web applications. This is my journey into modern web development.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        View My Projects
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        Contact Me
-                    </a>
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
 
             <div class="profile-card">
-                <div class="profile-circle">YN</div>
+                <div class="profile-circle">HD</div>
                 <h3>Haileab Dejene</h3>
-                <p>Future Web Developer</p>
+                <p>Aspiring Web Developer</p>
                 <div class="profile-tags">
                     <span>Learning</span>
                     <span>Building</span>
@@ -66,7 +65,7 @@
             </div>
         </section>
 
-        <!-- About -->
+        <!-- About Section -->
         <section class="section section-light" id="about">
             <div class="container">
                 <p class="eyebrow">GET TO KNOW ME</p>
@@ -75,110 +74,107 @@
                 <div class="about-content">
                     <div class="about-mark">ME<span>.</span></div>
                     <div>
-                        <h3>A student with a passion for technology</h3>
+                        <h3>Passionate about tech & problem solving</h3>
                         <p>
-                            My name is Haileab Dejene. I am a student who is
-                            interested in technology and web development.
-                            I am learning HTML, CSS, JavaScript, Git,
-                            and GitHub. My goal is to improve my skills
-                            and create useful websites.
+                            My name is Haileab Dejene. I am a student dedicated to learning modern web technologies.
+                            My focus is on creating responsive interfaces using semantic HTML, CSS, JavaScript, and Git.
                         </p>
                         <p>
-                            This portfolio is one of my first projects.
-                            I will keep improving it as I learn more.
+                            I enjoy turning design concepts into functional code and learning new web capabilities every single day.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills -->
+        <!-- Skills Section -->
         <section class="section container" id="skills">
             <p class="eyebrow">WHAT I'M LEARNING</p>
             <h2 class="section-title">My Skills</h2>
-            <p class="section-subtitle">
-                These are the technologies I am learning and practicing.
-            </p>
+            <p class="section-subtitle">Core technologies and tools I practice and build with.</p>
 
             <div class="skills-grid">
                 <article class="skill-card">
-                    <span class="skill-number">01</span>
-                    <h3>HTML</h3>
-                    <p>Creating the structure and content of web pages.</p>
-                    <div class="skill-bar"><span style="width: 60%"></span></div>
+                    <div class="card-header">
+                        <span class="skill-number">01</span>
+                        <h3>HTML5</h3>
+                    </div>
+                    <p>Semantic structure, accessibility, and modern layout design.</p>
+                    <div class="skill-bar"><span style="width: 75%"></span></div>
+                    <small>Intermediate</small>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-header">
+                        <span class="skill-number">02</span>
+                        <h3>CSS3</h3>
+                    </div>
+                    <p>Flexbox, Grid, custom properties, and smooth animations.</p>
+                    <div class="skill-bar"><span style="width: 65%"></span></div>
                     <small>Learning</small>
                 </article>
 
                 <article class="skill-card">
-                    <span class="skill-number">02</span>
-                    <h3>CSS</h3>
-                    <p>Designing websites with colors, layouts, and styles.</p>
-                    <div class="skill-bar"><span style="width: 40%"></span></div>
+                    <div class="card-header">
+                        <span class="skill-number">03</span>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>DOM manipulation, events, asynchronous features, and logic.</p>
+                    <div class="skill-bar"><span style="width: 45%"></span></div>
                     <small>Learning</small>
                 </article>
 
                 <article class="skill-card">
-                    <span class="skill-number">03</span>
-                    <h3>JavaScript</h3>
-                    <p>Making websites interactive and dynamic.</p>
-                    <div class="skill-bar"><span style="width: 15%"></span></div>
-                    <small>Getting started</small>
-                </article>
-
-                <article class="skill-card">
-                    <span class="skill-number">04</span>
-                    <h3>Git &amp; GitHub</h3>
-                    <p>Tracking changes and sharing my projects online.</p>
-                    <div class="skill-bar"><span style="width: 30%"></span></div>
+                    <div class="card-header">
+                        <span class="skill-number">04</span>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <p>Version control, tracking changes, and project hosting.</p>
+                    <div class="skill-bar"><span style="width: 50%"></span></div>
                     <small>Learning</small>
                 </article>
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- Projects Section -->
         <section class="section section-light" id="projects">
             <div class="container">
                 <p class="eyebrow">MY WORK</p>
-                <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">
-                    Here are projects I have built or plan to build.
-                </p>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Explore my work. Use the filter buttons to sort by category.</p>
+
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="html-css">HTML &amp; CSS</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                </div>
 
                 <div class="projects-grid">
-                    <article class="project-card">
+                    <article class="project-card" data-category="html-css javascript">
                         <div class="project-icon">01</div>
-                        <p class="project-label">FIRST PROJECT</p>
+                        <p class="project-label">FEATURED</p>
                         <h3>Personal Portfolio</h3>
-                        <p>
-                            A website that introduces me, my skills,
-                            and my learning journey.
-                        </p>
+                        <p>A modern, interactive student portfolio website built from scratch.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JS</span>
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card" data-category="javascript">
                         <div class="project-icon">02</div>
                         <p class="project-label">COMING SOON</p>
-                        <h3>To-Do List</h3>
-                        <p>
-                            A simple application for organizing daily
-                            tasks and keeping track of completed work.
-                        </p>
+                        <h3>To-Do App</h3>
+                        <p>Task tracker app with persistent storage and completion filters.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JS</span>
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card" data-category="javascript">
                         <div class="project-icon">03</div>
                         <p class="project-label">COMING SOON</p>
                         <h3>Calculator</h3>
-                        <p>
-                            A basic calculator project to practice
-                            JavaScript and user interaction.
-                        </p>
+                        <p>A sleek web calculator with keypress shortcuts and clean display.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JS</span>
                         </div>
@@ -187,29 +183,43 @@
             </div>
         </section>
 
-        <!-- Contact -->
+        <!-- Contact Section -->
         <section class="section container" id="contact">
             <p class="eyebrow">LET'S CONNECT</p>
             <h2 class="section-title">Contact Me</h2>
-            <p class="section-subtitle">
-                Thank you for visiting my portfolio. You can contact me
-                using the information below.
-            </p>
+            <p class="section-subtitle">Have a question or want to work together? Feel free to reach out!</p>
 
-            <div class="contact-card">
-                <div>
-                    <span class="contact-label">EMAIL</span>
-                    <p>haylapj@gmail.com</p>
+            <div class="contact-wrapper">
+                <div class="contact-card">
+                    <div>
+                        <span class="contact-label">EMAIL ME</span>
+                        <p><a href="mailto:haylapj@gmail.com">haylapj@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <span class="contact-label">GITHUB</span>
+                        <p><a href="https://github.com/haylapj" target="_blank" rel="noopener noreferrer">github.com/haylapj ↗</a></p>
+                    </div>
                 </div>
-                <div>
-                    <span class="contact-label">GITHUB</span>
-                    <p>
-                        <a href="https://github.com/your-username"
-                           target="_blank" rel="noopener noreferrer">
-                            My GitHub Profile ↗
-                        </a>
-                    </p>
-                </div>
+
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/xknp_your_form_id" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                    <p class="form-status" id="form-status"></p>
+                </form>
             </div>
         </section>
     </main>
